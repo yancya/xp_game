@@ -5,7 +5,7 @@ discount = case (item * num)
            when -> (n) { n >= 1_000 }
              0.03
            else
-             0.01
+             0
            end
 
 area = gets.chomp
