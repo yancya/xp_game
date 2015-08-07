@@ -2,6 +2,8 @@
 item = gets.to_i
 num = gets.to_i
 discount = case (item * num)
+           when -> (n) { n >= 5_000 }
+             0.05
            when -> (n) { n >= 1_000 }
              0.03
            else
