@@ -1,6 +1,12 @@
+# coding: utf-8
 item = gets.to_i
 num = gets.to_i
-discount = 0.1
+discount = case (item * num)
+           when -> (n) { n >= 1_000 }
+             0.03
+           else
+             0.01
+           end
 
 area = gets.chomp
 
