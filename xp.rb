@@ -34,5 +34,8 @@ end
 result = ((item * num) * (1.00 - discount)) * (1.00 + tax)
 
 puts <<-RESULT
+商品金額: #{item}
+個数: #{num}
+地域: #{area}
 合計金額: #{result.round} 円
 RESULT
