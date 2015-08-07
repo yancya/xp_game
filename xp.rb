@@ -39,5 +39,14 @@ puts <<-RESULT
 商品金額: #{item}
 個数: #{num}
 地域: #{area}
-合計金額: #{result.round} 円
+合計金額: #{result.round.to_s.chars.reverse.each_slice(3).map(&:join).join(',').reverse} 円
 RESULT
+
+
+
+
+
+
+
+
+
