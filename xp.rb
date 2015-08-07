@@ -7,6 +7,8 @@ area = gets.chomp
 tax = case area
 when '東日本'
 0.08
+when '四国'
+0.04
 end
 result = ((item * num) * (1.00 - discount)) * (1.00 + tax)
 
