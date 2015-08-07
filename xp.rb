@@ -11,6 +11,8 @@ when '四国'
 0.04
 when '北海道'
 0.0685
+when '西日本'
+0.0625
 end
 result = ((item * num) * (1.00 - discount)) * (1.00 + tax)
 
