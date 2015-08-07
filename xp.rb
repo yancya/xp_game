@@ -1,6 +1,6 @@
 # coding: utf-8
 item = gets.tap { |str| raise '不正' if str.chomp.match /[^\d]/ }.to_i
-num = gets.to_i
+num = gets.tap { |str| raise '不正' if str.chomp.match /[^\d]/ }.to_i
 discount = case (item * num)
            when -> (n) { n >= 50_000 }
              0.15
