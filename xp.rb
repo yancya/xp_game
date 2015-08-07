@@ -33,4 +33,6 @@ end
 
 result = ((item * num) * (1.00 - discount)) * (1.00 + tax)
 
-puts result.round
+puts <<-RESULT
+合計金額: #{result.round} 円
+RESULT
