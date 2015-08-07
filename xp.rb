@@ -1,4 +1,4 @@
-item = 10_000
+item = gets.to_i
 num = 1
 discount = 0.1
 tax = 0.08
